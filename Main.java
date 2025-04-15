@@ -1,9 +1,8 @@
 public class Main {
     public static void main(String[] args) {
-        // Pasta com os arquivos DNA
+   
         String pasta = "src/arquivosDNA";
 
-        // Pegar todos os arquivos dna-x.txt
         java.io.File dir = new java.io.File(pasta);
         java.io.File[] arquivos = dir.listFiles((d, nome) -> nome.matches("dna-\\d+\\.txt"));
 
